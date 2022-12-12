@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sistem Informasi Akademik</title>
+    <link rel="stylesheet" type="text/css" href="../css/siakad_smu.css" media="screen" />
+    <script src='../js/tambah_nilaisiswa.js'></script>
+    <script src='../js/cari_data.js'></script>
+</head>
+
+<body bgcolor=lightblue>
+    <!-- <%--awal dari halaman web--%> -->
+    <div id="wrap">
+        <div id="header">
+            <!-- <%--awal header--%> -->
+            <img src="../image/tut_wuri_handayani_1.png">
+            <!-- <%--gambar silahkan masukan logo BSI--%> -->
+            <nobr>
+                <h1>
+                    <center>Sistem Informasi Akademik</center>
+                </h1>
+                <h1>
+                    <center>Sekolah Menengah Umum</center>
+                </h1>
+                <h1>
+                    <center>Berbasis Web</center>
+                </h1>
+            </nobr>
+        </div><!-- <%--akhir dari header--%> -->
+        <div id="menu">
+            <!-- <%--awal dari menu atas --%> -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login_admin.html">Logout</a></li>
+            </ul>
+        </div><!-- <%-- akhir dari menu atas --%> -->
+        <div id="content">
+            <!-- <%-- awal dari isi content --%> -->
+            <div class="right"><br><!-- <%-- awal dari content sebelah kanan web --%>  -->
+                <center>
+                    <table bgcolor="pink" border="0" width="100%" cellpadding="0" cellspacing="2">
+                        <tr class="head">
+                            <thead>
+                                <td>
+                                    <center>
+                                        <h2>ADMIN</h2>
+                                    </center>
+                                </td>
+                            </thead>
+                        </tr>
+                    </table>
+                    <table widht="100%">
+                        <tr>
+                            <td valign="top" widht="0%">
+                            <td valign="top" widht="150%">
+                                <table bgcolor="gray" border="0" width="100%" cellpadding="0" cellspacing="2">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>Master Data</h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                    <ul>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="update_guru.html">Update Data Pribadi
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3><a href="input_nilaisiswa.html">Input Nilai Siswa</a></h3>
+                                            </td>
+                                        </tr>
+                                    </ul>
+                                </table>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <center>
+                    <table widht="100%">
+                        <tr>
+                            <td valign="top" widht="0%">
+                            <td valign="top" widht="150%">
+                                <table bgcolor="gray" border="0" width="100%" cellpadding="0" cellspacing="2">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>Cetak Data</h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                    <ul>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3><a href="print_guru.html">Cetak Guru</a></h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3><a href="print_nilai.html">Cetak Nilai Siswa</a></h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3><a href="print_jadwalpelajaran.html">Cetak Jadwal Mengajar</a></h3>
+                                            </td>
+                                        </tr>
+                                    </ul>
+                                </table>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div><!-- <%-- akhir dari content sebelah kanan web --%>     -->
+            <div class="left">
+                <!-- <%-- awal dari content sebelah kiri web --%>  -->
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="110%">
+                            <!-- <%-- isi dari content sebelah kiri --%> -->
+                            <br>
+                            <center>
+                                <table bgcolor="gray" border="0" width="50%" cellpadding="0" cellspacing="0"
+                                    style="border: 5px dashed royalblue;">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>
+                                                    <center>Input Data Nilai Siswa</center>
+                                                </h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                </table>
+                            </center>
+
+                            <form name='biodata' action="" method="">
+                                <center>
+                                    <table border="1" width="50%" cellpadding="0" cellspacing="0"
+                                        style="border: 5px dashed royalblue;">
+                                        <tr> 
+                                            <td width="60%">Nomor</td>
+                                            <td><input type="text" name="id_nilai_siswa"/></td>
+                                        </tr>
+                                        <tr> 
+                                            <td>Nama Siswa</td>
+                                            <td><select name="nama_siswa">
+                                                <option value="">Pilih Siswa</option>
+                                                <option value="Adit Zulkaidir">Adit Zulkaidir</option>
+                                                <option value="Alifah Akmarini">Alifah Akmarini</option>
+                                                <option value="Ali Fuady">Ali Fuady</option>
+                                            </select> 
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td>Kelas</td>
+                                            <td><select name="nama_kelas">
+                                                <option value="">Pilih Kelas</option>
+                                                <option value="X-1">X-1</option>
+                                                <option value="X-2">X-2</option>
+                                                <option value="XI IPA 1">XI IPA 1</option>
+                                                <option value="XI IPA 2">XI IPA 2</option>
+                                                <option value="XI Bhs Indo">XI Bahasa Indonesia</option>
+                                                <option value="XI Bahasa Inggris">XI Bahasa Inggris</option>
+                                                <option value="XII IPA 1">XII IPA 1</option>
+                                                <option value="XII IPA 2">XII IPA 2</option>
+                                                <option value="XII IPS 2">XII IPS 2</option>
+                                                <option value="XII Bahasa Indonesia">XII Bahasa Indonesia</option>
+                                                <option value="XII Bahasa Inggris">XII Bahasa Inggris</option>
+                                            </select> 
+                                            </td>
+                                        </tr> 
+                                        <tr>
+                                            <td>Mata Pelajaran</td>
+                                            <td><select name="nama_pelajaran">
+                                            <option value="">Pilih Pelajaran</option>
+                                            <option value="Pendidikan Agama">Pendidikan Agama</option>
+                                            <option value="PKN">PKN</option>
+                                            <option value="Matematika">Matematika</option>
+                                            <option value="PJOK">PJOK</option>
+                                            <option value="Biologi">Biologi</option>
+                                            <option value="Fisika">Fisika</option>
+                                            <option value="Kimia">Kimia</option>
+                                            <option value="Geografi">Geografi</option>
+                                            <option value="Ekonomi">Ekonomi</option>
+                                            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                                            <option value="Bahasa Inggris">Bahasa Inggris</option>
+                                            </select> 
+                                            </td>
+                                        </tr>  
+                                         <tr>
+                                            <td>Semester</td>
+                                            <td><select name="semester">
+                                                    <option value="">Pilih Semester</option>
+                                                    <option value="Genap">Genap</option>
+                                                    <option value="Ganjil">Ganjil</option>
+                                                </select> 
+                                            </td>
+                                        </tr> 
+                                            <td>Tahun Ajaran</td>
+                                            <td><input type="text" name="tahun_ajaran"/></td> 
+                                        <tr> 
+                                            <td>Tugas</td>
+                                            <td><input type="text" name="tugas"/></td> 
+                                        </tr> 
+                                         <tr> 
+                                            <td>UTS</td>
+                                            <td><input type="text" name="uts"/></td> 
+                                        </tr> 
+                                         <tr> 
+                                            <td>UAS</td>
+                                            <td><input type="text" name="uas"/></td> 
+                                        </tr> 
+                                         <tr> 
+                                            <td>Nilai Raport</td>
+                                            <td><input type="text" name="nilai_raport"/></td> 
+                                        </tr> 
+                                        <td>
+                                            <center>
+                                                <input type='button' onClick='terimainput()' value='Save'/> 
+                                            </center>
+                                        </td>
+                                        <td>
+                                            <center>
+                                                <input type='reset' value='Reset'/>
+                                            </center>
+                                        </td>
+                                        <td></td>
+                                    </table>
+                                </center>
+                            </form>
+                           <br>
+                            <table border="0" id='tabelinput' width="100%" cellpadding="0" cellspacing="0">
+                                <tr class="head">
+                                    <th>Nomor</th>
+                                    <th>Nama Siswa</th>
+                                    <th>Kelas</th>
+                                    <th>Mata Pelajaran</th>
+                                    <th>Semester</th>
+                                    <th>Tahun Ajaran</th>
+                                    <th>Tugas</th>
+                                    <th>UTS</th>
+                                    <th>UAS</th>
+                                    <th>Nilai Raport</th>
+                                    <!-- <td>Action</td> -->
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Budi Gunawan</td>
+                                    <td>XI IPA I</td>
+                                    <td>Biologi</td>
+                                    <td>Genap</td>
+                                    <td>2021</td>
+                                    <td>80</td>
+                                    <td>75</td>
+                                    <td>85</td>
+                                    <td>80</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Kumala Sari</td>
+                                    <td>XI IPS I</td>
+                                    <td>Geografi</td>
+                                    <td>Ganjil</td>
+                                    <td>2021</td>
+                                    <td>80</td>
+                                    <td>80</td>
+                                    <td>80</td>
+                                    <td>80</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <div class="footer">
+                    <!-- <%--awal dari content footer web --%> -->
+                    support by <a href="">Junior Programmer Mahasiswa Program Study Komputerisasi Akuntansi BSI MARGONDA
+                        DEPOK</a>,
+                        <a href="">Copyright &copy; 12 April 2018 by Haryono, new edition Des 2022. – All Right Reserved</a>
+                    <br>
+                    <!-- <%=new java.util.Date()%> -->
+                    <p id="demo"></p>
+                    <script>
+                        var d = Date();
+                        document.getElementById("demo").innerHTML = d;
+                    </script>
+                    <script>
+                        date = new Date();
+                        millisecond = date.getMilliseconds();
+                        detik = date.getSeconds();
+                        menit = date.getMinutes();
+                        jam = date.getHours();
+                        arrhari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+                        hari = date.getDay();
+                        tanggal = date.getDate();
+                        arrbulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                        bulan = date.getMonth();
+                        tahun = date.getFullYear();
+                        document.write(arrhari[hari] + "," + tanggal + "-" + arrbulan[bulan] + "-" + tahun + ". " + jam + " : " + menit + " : " + detik + "." + millisecond);
+                    </script>
+                </div>
+            </div>
+            <div style="clear:both;">
+            </div>
+        </div>
+        <!-- <%--akhir dari isi content --%> -->
+    </div>
+    <!-- <%--akhir dari halaman web --%> -->
+</body>
+
+</html>

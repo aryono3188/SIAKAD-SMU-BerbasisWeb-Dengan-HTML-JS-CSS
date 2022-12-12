@@ -1,0 +1,37 @@
+.mainTable {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#table {
+    margin: 5px auto;
+}
+
+table tr:not(:first-child):hover {
+    background-color: #add;
+}
+
+.updateBtn button:hover {
+    background-color: blue;
+    color: black;
+    transition: .5s;
+    border-radius: 5px
+}
+
+.editTable {
+    display: none;
+}
+
+.editRowBtn {
+    background-color: cyan;
+    color: white;
+    border: 1px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.editRowBtn:hover {
+    background-color: lightgray;
+    color: black;
+    transition: .5s;
+}

@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sistem Informasi Akademik</title>
+    <link rel="stylesheet" type="text/css" href="../css/siakad_smu.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/update.css" media="screen" />
+    <script src='../js/tambah_admin.js'></script>
+    <script src='../js/cari_data.js'></script>
+</head>
+
+<body bgcolor=lightblue>
+    <!-- <%--awal dari halaman web--%> -->
+    <div id="wrap">
+        <div id="header">
+            <!-- <%--awal header--%> -->
+            <img src="../image/tut_wuri_handayani_1.png">
+            <!-- <%--gambar silahkan masukan logo BSI--%> -->
+            <nobr>
+                <h1>
+                    <center>Sistem Informasi Akademik</center>
+                </h1>
+                <h1>
+                    <center>Sekolah Menengah Umum</center>
+                </h1>
+                <h1>
+                    <center>Berbasis Web</center>
+                </h1>
+            </nobr>
+        </div><!-- <%--akhir dari header--%> -->
+        <div id="menu">
+            <!-- <%--awal dari menu atas --%> -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="login_admin.html">Logout</a></li>
+            </ul>
+        </div><!-- <%-- akhir dari menu atas --%> -->
+        <div id="content">
+            <!-- <%-- awal dari isi content --%> -->
+            <div class="right"><br><!-- <%-- awal dari content sebelah kanan web --%>  -->
+                <center>
+                    <table bgcolor="pink" border="0" width="100%" cellpadding="0" cellspacing="2">
+                        <tr class="head">
+                            <thead>
+                                <td>
+                                    <center>
+                                        <h2>ADMIN</h2>
+                                    </center>
+                                </td>
+                            </thead>
+                        </tr>
+                    </table>
+                    <table widht="100%">
+                        <tr>
+                            <td valign="top" widht="0%">
+                            <td valign="top" widht="150%">
+                                <table bgcolor="gray" border="0" width="100%" cellpadding="0" cellspacing="2">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>Master Data</h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                    <ul>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_admin.html">Admin</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_guru.html">Guru</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_tatausaha.html">Tata Usaha</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_walimurid.html">Wali Murid</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_siswa.html">Siswa</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_ruangkelas.html">Ruang Kelas</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_matapelajaran.html">Mata Pelajaran</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_jadwalpelajaran.html">Jadwal Pelajaran</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_nilaisiswa.html">Nilai Siswa</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="tampil_spp.html">SPP</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                    </ul>
+                                </table>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <center>
+                    <table widht="100%">
+                        <tr>
+                            <td valign="top" widht="0%">
+                            <td valign="top" widht="150%">
+                                <table bgcolor="gray" border="0" width="100%" cellpadding="0" cellspacing="2">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>Cetak Data</h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                    <ul>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_admin.html">Cetak Admin</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_guru.html">Cetak Guru</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_tatausaha.html">Cetak Tata Usaha</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_walimurid.html">Cetak Wali Murid</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_siswa.html">Cetak Siswa</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_ruangkelas.html">Cetak Ruang Kelas</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_matapelajaran.html">Cetak Mata Pelajaran</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_jadwalpelajaran.html">Cetak Jadwal Pelajaran</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_nilaisiswa.html">Cetak Nilai Siswa</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td bgcolor="pink">
+                                                <h3>
+                                                    <a href="cetak_spp.html">Cetak SPP</a>
+                                                </h3>
+                                            </td>
+                                        </tr>
+                                    </ul>
+                                </table>
+                            </td>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+            </div><!-- <%-- akhir dari content sebelah kanan web --%>     -->
+            <div class="left">
+                <!-- <%-- awal dari content sebelah kiri web --%>  -->
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="110%">
+                            <!-- <%-- isi dari content sebelah kiri --%> -->
+                            <br>
+                            <center>
+                                <table bgcolor="gray" border="0" width="50%" cellpadding="0" cellspacing="0"
+                                    style="border: 5px dashed royalblue;">
+                                    <tr class="head">
+                                        <thead>
+                                            <td>
+                                                <h2>
+                                                    <center>Input Data Admin</center>
+                                                </h2>
+                                            </td>
+                                        </thead>
+                                    </tr>
+                                </table>
+                            </center>
+                            
+                            <form name='biodata' method="" action="">
+                                <center>
+                                    <table border="1" width="50%" cellpadding="0" cellspacing="0"
+                                        style="border: 5px dashed royalblue;">
+                                        <!-- <input type="hidden" name="aksi" value="${param.aksi}"/> -->
+                                        <tr>
+                                            <td width="60%">Nomor</td>
+                                            <td><input type="text" name="id_admin" id="val_id_admin" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Nama Admin</td>
+                                            <td><input type="text" name="nama_admin" id="val_nama_admin" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>User Name</td>
+                                            <td><input type="text" name="usname_admin" id="val_usname_admin" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Password</td>
+                                            <td><input type="text" name="pass_admin" id="val_pass_admin" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Email</td>
+                                            <td><input type="text" name="email" id="val_email" /></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Regdate</td>
+                                            <td><input type="date" name="regdate" id="val_regdate" /></td>
+                                        </tr>
+                                        <td>
+                                            <center>
+                                                <input type='button' onClick='terimainput()' value='Save' </center>
+                                        </td>
+                                        <td>
+                                            <center>
+                                                <input type='reset' value='Reset'>
+                                            </center>
+                                        </td>
+                                        <td></td>
+                                    </table>
+                                </center>
+                            </form>
+                            <br>
+                            <h3>
+                                Cari Data Admin : <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Cari Nama" title="Type in a name"/>
+                            </h3><br>
+                            <h3> Selamat Datang, ini Data Pribadi Anda. </h3> <br />
+                            <table border="1" align="center" id="tabelinput" width="90%" cellpadding="0" cellspacing="0">
+                                <tr class="head">
+                                    <th>Nomor</th>
+                                    <th>Nama Admin</th>
+                                    <th>User Name</th>
+                                    <th>Password</th>
+                                    <th>Email</th>
+                                    <th>Regdate</th>
+                                    <th>Action</th>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Haryono</td>
+                                    <td>112013001</td>
+                                    <td>haryono</td>
+                                    <td>haryono@gmail.com</td>
+                                    <td>2022-11-20</td>
+                                    <td align="center">
+                                        <input type="button" name="del" value="Delete" onclick="del(this);"class="btnbtn-danger">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Soehartono</td>
+                                    <td>112013002</td>
+                                    <td>soehartono</td>
+                                    <td>soehartono@gmail.com</td>
+                                    <td>2022-11-21</td>
+                                    <td align="center">
+                                        <input type="button" name="del" value="Delete" onclick="del(this);"class="btnbtn-danger">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>Muhammad</td>
+                                    <td>111111111</td>
+                                    <td>Muhammad</td>
+                                    <td>Muhammad@gmail.com</td>
+                                    <td>2022-11-22</td>
+                                    <td align="center">
+                                        <input type="button" name="del" value="Delete" onclick="del(this);"class="btnbtn-danger">
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                <br>
+                <div class="updateBtn">
+                    <button onclick="editTableDisplay()">update Admin</button>
+                </div>
+                <div class="editTable">
+                    <table width="100%">
+                        <tr>
+                            <td valign="top" width="110%">
+                                <br>
+                                <center>
+                                    <table bgcolor="gray" border="0" width="50%" cellpadding="0" cellspacing="0"
+                                        style="border: 5px dashed royalblue;">
+                                        <tr class="head">
+                                            <thead>
+                                                <td>
+                                                    <h2>
+                                                        <center>Update Data Admin</center>
+                                                    </h2>
+                                                </td>
+                                            </thead>
+                                        </tr>
+                                    </table>
+                                </center>
+
+                                <form>
+                                    <center>
+                                        <table border="1" width="50%" cellpadding="0" cellspacing="0"
+                                            style="border: 5px dashed royalblue;">
+                                            <tr>
+                                                <td width="60%">Nomor</td>
+                                                <td><input type="text" name="id_admin" id="id_admin" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Nama Admin</td>
+                                                <td><input type="text" name="nama_admin" id="nama_admin" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>User Name</td>
+                                                <td><input type="text" name="usname_admin" id="usname_admin" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Password</td>
+                                                <td><input type="text" name="pass_admin" id="pass_admin" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Email</td>
+                                                <td><input type="text" name="email" id="email" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Regdate</td>
+                                                <td><input type="date" name="regdate" id="regdate" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <center>
+                                                        <input type='button' onClick='editRow()'  class="editRowBtn" value='Save'/> 
+                                                    </center>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </center>
+                                </form>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <script src='../js/update_admin.js'></script>
+                <div class="footer">
+                    <!-- <%--awal dari content footer web --%> -->
+                    support by <a href="">Junior Programmer Mahasiswa Program Study Komputerisasi Akuntansi BSI MARGONDA
+                        DEPOK</a>,
+                        <a href="">Copyright &copy; 12 April 2018 by Haryono, new edition Des 2022. – All Right Reserved</a>
+                    <br>
+                    <!-- <%=new java.util.Date()%> -->
+                    <p id="demo"></p>
+                    <script>
+                        var d = Date();
+                        document.getElementById("demo").innerHTML = d;
+                    </script>
+                    <script>
+                        date = new Date();
+                        millisecond = date.getMilliseconds();
+                        detik = date.getSeconds();
+                        menit = date.getMinutes();
+                        jam = date.getHours();
+                        arrhari = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
+                        hari = date.getDay();
+                        tanggal = date.getDate();
+                        arrbulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                        bulan = date.getMonth();
+                        tahun = date.getFullYear();
+                        document.write(arrhari[hari] + "," + tanggal + "-" + arrbulan[bulan] + "-" + tahun + ". " + jam + " : " + menit + " : " + detik + "." + millisecond);
+                    </script>
+                </div>
+            </div>
+            <div style="clear:both;">
+            </div>
+        </div>
+        <!-- <%--akhir dari isi content --%> -->
+    </div>
+    <!-- <%--akhir dari halaman web --%> -->
+</body>
+
+</html>

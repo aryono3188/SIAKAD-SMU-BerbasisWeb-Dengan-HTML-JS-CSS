@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sistem Informasi Akademik</title>
+    <link rel="stylesheet" type="text/css" href="../css/siakad_smu.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="../css/calender.css" media="screen" />
+    <script src="../js/login_tatausaha.js"></script>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- <%-- awal dari halaman web --%> -->
+        <div id="header">
+            <!-- <%--awal header--%> -->
+            <img src="../image/tut_wuri_handayani_1.png">
+            <!-- <%--gambar silahkan masukan logo BSI--%> -->
+            <nobr>
+                <h1>
+                    <center>Sistem Informasi Akademik</center>
+                </h1>
+                <h1>
+                    <center>Sekolah Menengah Umum</center>
+                </h1>
+                <h1>
+                    <center>Berbasis Web</center>
+                </h1>
+            </nobr>
+        </div><!-- <%--akhir dari header--%> -->
+
+        <div id="menu">
+            <!-- <%-- awal dari menu atas --%> -->
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+        </div> <!-- <%-- akhir dari menu atas --%> -->
+
+        <div id="content">
+            <!-- <%-- awal dari isi content --%> -->
+            <div class="right">
+                <!-- <%-- awal dari content sebelah kanan web --%>   -->
+                <table bgcolor="pink" border="0" width="100%" cellpadding="0" cellspacing="2">
+                    <tr class="head">
+                        <thead>
+                            <td>
+                                <center>
+                                    <h2>Tata Usaha</h2>
+                                </center>
+                            </td>
+                        </thead>
+                    </tr>
+                </table><br>
+                <table width="100%" bgcolor="rosybrown" border="1" cellpadding=""
+                    style="border: 5px dashed blueviolet;">
+                    <tr>
+                        <td valign="top" widht="0%">
+                            <h2>Today</h2>
+                            <div id="idx-calendar">
+                                <div id="calendar-control">
+                                    <div id="monthNow">Januari 2014</div>
+                                    <div id="nextMonth"></div>
+                                    <div id="prevMonth"></div>
+                                </div>
+                                <div id="dayNames">
+                                    <ul>
+                                        <li>Minggu</li>
+                                        <li>Senin</li>
+                                        <li>Selasa</li>
+                                        <li>Rabu</li>
+                                        <li>Kamis</li>
+                                        <li>Jum'at</li>
+                                        <li>Sabtu</li>
+                                    </ul>
+                                </div>
+                                <div id="daysNum">
+                                </div>
+                            </div>
+                            <script src="../js/calender.js"></script>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="left">
+                <!-- <%-- awal dari content sebelah kiri web --%>                    -->
+                <table width="100%">
+                    <tr>
+                        <td valign="top" width="110%">
+                            <!-- <%-- isi dari content kiri --%> -->
+                            <br>
+                            <br>
+                            <form id="form_id" method="post" name="myform">
+                                <center>
+                                    <table bgcolor="#C1DAD7" border="1" width="40%" cellpadding="20"
+                                        style="border: 5px dashed red;">
+                                        <thead>
+                                            <tr>
+                                                <th colspan="2">Login Tata Usaha</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>User Name</td>
+                                                <td><input type="text" name="usname_t_u" id="usname_t_u" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Password</td>
+                                                <td><input type="password" name="pass_t_u" id="pass_t_u" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="button" value="Login" id="submit"
+                                                        onclick="validate()" />
+                                                </td>
+                                                <td><input type="reset" value="Reset" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </center>
+                        </td>
+                    </tr>
+                </table>
+                <center><b class="note">Note : </b>For this demo use following username and password. <br />
+                    <b class="valid">User Name 1 : Haryono<br />Password 1 : Keren117</b></br>
+                    <b class="valid">User Name 2 : Gondrong<br />Password 2 : beken117</b>
+                </center>
+                <div class="footer">
+                    <!-- <%--awal dari content footer web --%> -->
+
+                    support by <a href="">Junior Programmer Mahasiswa Program Study Komputerisasi Akuntansi BSI MARGONDA
+                        DEPOK</a>,
+                    <a href="">Copyright &copy; 12 April 2018 by Haryono,– All Right Reserved</a>.
+
+                    <br>
+                    <!-- <%=new java.util.Date()%> -->
+                </div>
+            </div>
+            <div style="clear:both;">
+            </div>
+
+        </div> <!-- <%--akhir dari halaman web --%> -->
+
+
+        </form>
+</body>
+
+</html>
